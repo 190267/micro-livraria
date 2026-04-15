@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package inventory;
-
 service InventoryService {
     rpc SearchAllProducts(Empty) returns (ProductsResponse) {}
     rpc SearchProductByID(Payload) returns (ProductResponse) {}
