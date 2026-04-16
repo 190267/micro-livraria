@@ -13,7 +13,7 @@ const inventoryProto = grpc.loadPackageDefinition(packageDefinition);
 
 const server = new grpc.Server();
 
-// Registra as DUAS funções em uma única chamada de addService
+
 server.addService(inventoryProto.InventoryService.service, {
     SearchAllProducts: (_, callback) => {
         callback(null, {
